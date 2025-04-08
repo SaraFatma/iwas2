@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Employee Dashboard</h2>
+            <ul>
+                <li><a href="employee-dashboard.html">Employee Dashboard</a></li>
+                <li><a class ="active" href="employee-profile.html">Profile</a></li>
+                <li><a href="leave-request.html">Leave Requests</a></li>
+                <li><a href="employee-allocatedProject.html">Allocated Projects</a></li>
+                <li><button id="logout-btn">Logout</button></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <h1>Profile</h1>
+            
+            <div class="profile-container">
+                <label>Name:</label>
+                <input type="text" id="emp-name" disabled>
+
+                <label>Email:</label>
+                <input type="email" id="emp-email" disabled>
+
+                <label>Department:</label>
+                <input type="text" id="emp-department" disabled>
+
+                <label>Designation:</label>
+                <input type="text" id="emp-designation" disabled>
+
+                <!-- <label>Skills:</label>
+                <select id="emp-skills" disabled></select> -->
+                <label>Current Skills:</label>
+                <ul id="emp-current-skills"></ul>
+
+                <!-- Add New Skills
+                <label>Add New Skill:</label>
+                <input type="text" id="new-skill" placeholder="Enter skill">
+                <button id="add-skill-btn">Add Skill</button> -->
+                <label>Skills:</label>
+                <select id="emp-skills" ></select>
+
+                <label>Availability:</label>
+                <select id="emp-availability" >
+                    <option value="true">Available</option>
+                    <option value="false">Not Available</option>
+                </select>
+
+                <button id="edit-btn">Edit</button>
+                <button id="save-btn" style="display: none;">Save</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/employee-profile.js"></script>
+</body>
+</html>

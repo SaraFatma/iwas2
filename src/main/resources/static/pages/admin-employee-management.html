@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="../css/admin1.css"> <!-- Admin Styles -->
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-employee-management.html" class="active">Employee Management</a></li>
+            <li><a href="admin-project-management.html">Project Management</a></li>
+            <li><a href="leave-approval.html">Leave Requests</a></li>
+            <li><a href="project-allocation-suggestion.html">Project Allocation</a></li>
+            <li><a href="admin-assignedEmp.html">Assigned Employee</a></li>
+            <li><a   href="admin-assignEmpManaully.html">Assign Employee</a></li>
+            <li><button id="logout-btn">Logout</button></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Employee Management</h1>
+
+        <!-- Employee Table -->
+        <div class="employee-container">
+            <table class="employee-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Designation</th>
+                        <th>Department</th>
+                        <th>Availability</th>
+                        <th>Skills</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list">
+                    <!-- Employees will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Add Employee Form -->
+        <div class="form-container">
+            <h3>Add New Employee</h3>
+            <input type="text" id="empName" placeholder="Employee Name">
+            <input type="email" id="empEmail" placeholder="Employee Email">
+            <input type="text" id="empDesignation" placeholder="Designation">
+            <input type="text" id="empDepartment" placeholder="Department">
+            <input type="text" id="empPassword" placeholder="Password">
+            <input type="text" id="empAvailability" placeholder="Availability">
+            <button class="add-employee-btn" onclick="addEmployee()">Add Employee</button>
+        </div>
+    </div>
+
+    <div id="skillModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSkillModal()">&times;</span>
+            <h3>Manage Skills for <span id="skillEmpName"></span></h3>
+            <select id="skillSelect">
+                <!-- Skills will be dynamically loaded here -->
+            </select>
+            <button onclick="addSkillToEmployee()">Add Skill</button>
+            <h4>Assigned Skills:</h4>
+            <ul id="assignedSkills"></ul>
+        </div>
+    </div>
+
+    <!-- Update Employee Modal -->
+<div id="updateEmployeeModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeUpdateModal()">&times;</span>
+        <h3>Update Employee</h3>
+        <input type="hidden" id="updateEmpId">
+        <input type="text" id="updateEmpName" placeholder="Employee Name">
+        <input type="email" id="updateEmpEmail" placeholder="Employee Email">
+        <input type="text" id="updateEmpDesignation" placeholder="Designation">
+        <input type="text" id="updateEmpDepartment" placeholder="Department">
+        <input type="text" id="updateEmpPassword" placeholder="Password">
+        <select id="updateEmpAvailability">
+            <option value="true">Available</option>
+            <option value="false">Unavailable</option>
+        </select>
+        <button onclick="updateEmployee()">Save Changes</button>
+    </div>
+</div>
+
+
+    <script src="../js/admin-employee-management.js"></script>
+</body>
+</html>

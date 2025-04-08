@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Approval</title>
+    <link rel="stylesheet" href="../css/admin1.css">
+</head>
+<body>
+    <!-- Admin Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-employee-management.html">Employee Management</a></li>
+            <li><a href="admin-project-management.html ">Project Management</a></li>
+            <li><a href="leave-approval.html" class="active">Leave Requests</a></li>
+            <li><a href="project-allocation-suggestion.html">Project Allocation</a></li>
+            <li><a href="admin-assignedEmp.html">Assigned Employee</a></li>
+            <li><a href="admin-assignEmpManaully.html">Assign Employee</a></li>
+            <li><button id="logout-btn">Logout</button></li>
+        </ul>
+    </div>
+
+    <!-- Leave Approval Content -->
+    <div class="main-content">
+        <h1>Leave Requests</h1>
+        <div class="leave-list">
+            <!-- Leave Request Item -->
+            <div class="leave-item">
+                <div class="leave-info">
+                    <h3>Employee Name: John Doe</h3>
+                    <p><strong>Leave Type:</strong> Sick Leave</p>
+                    <p><strong>Start Date:</strong> 2025-04-01</p>
+                    <p><strong>End Date:</strong> 2025-04-05</p>
+                    <p><strong>Status:</strong> Pending</p>
+                </div>
+                <div class="leave-actions">
+                    <button class="approve-btn">Approve</button>
+                    <button class="reject-btn">Reject</button>
+                </div>
+            </div>
+
+            <!-- Leave Request Item -->
+            <div class="leave-item">
+                <div class="leave-info">
+                    <h3>Employee Name: Jane Smith</h3>
+                    <p><strong>Leave Type:</strong> Vacation</p>
+                    <p><strong>Start Date:</strong> 2025-04-10</p>
+                    <p><strong>End Date:</strong> 2025-04-14</p>
+                    <p><strong>Status:</strong> Pending</p>
+                </div>
+                <div class="leave-actions">
+                    <button class="approve-btn">Approve</button>
+                    <button class="reject-btn">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/leave-approval.js"></script>
+</body>
+</html>

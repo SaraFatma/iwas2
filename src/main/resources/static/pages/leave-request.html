@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Request</title>
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Employee Portal</h2>
+        <ul>
+                <li><a href="employee-dashboard.html">Employee Dashboard</a></li>
+                <li><a href="employee-profile.html">Profile</a></li>
+                <li><a class ="active" href="leave-request.html">Leave Requests</a></li>
+                <li><a href="employee-allocatedProject.html">Allocated Projects</a></li>
+                <li><button id="logout-btn">Logout</button></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Leave Request</h2>
+        
+        <div class="leave-form">
+            <label for="leave-type">Leave Type:</label>
+            <select id="leave-type">
+                <option value="sick">Sick Leave</option>
+                <option value="casual">Casual Leave</option>
+                <option value="vacation">Vacation</option>
+            </select>
+
+            <label for="leave-date">Leave start Date:</label>
+            <input type="date" id="leave-date">
+
+            <label for="leave-end-date">Leave end Date:</label>
+            <input type="date" id="leave-end-date">
+
+            <label for="leave-reason">Reason:</label>
+            <textarea id="leave-reason" placeholder="Enter reason..."></textarea>
+
+            <button id="apply-leave">Apply Leave</button>
+        </div>
+
+        <h3>Your Leave Requests</h3>
+        <table class="leave-table">
+            <tr>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Sick Leave</td>
+                <td>2025-03-20</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
+                <td>Vacation</td>
+                <td>2025-03-28</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../js/leave-request.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    
+    <link rel="stylesheet" href="../css/admin1.css"> <!-- Admin specific styles -->
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Admin Dashboard</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-employee-management.html">Employee Management</a></li>
+            <li><a href="admin-project-management.html" class ="active">Project Management</a></li>
+            <li><a href="leave-approval.html">Leave Requests</a></li>
+            <li><a href="project-allocation-suggestion.html">Project Allocation</a></li>
+            <li><a href="admin-assignedEmp.html">Assigned Employee</a></li>
+            <li><a   href="admin-assignEmpManaully.html">Assign Employee</a></li>
+            <li><button id="logout-btn">Logout</button></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>Project Management</h2>
+        
+        <button id="addProjectBtn" class="add-btn">+ Add Project</button>
+
+        <table id="projectTable">
+            <thead>
+                <tr>
+                    <th>Project ID</th>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Projects will be dynamically loaded here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add Project Form -->
+    <div id="addProjectForm" class="form-popup">
+        <span class="close-btn" onclick="closeForm()">✖</span>
+        <h3>Add New Project</h3>
+        
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" placeholder="Enter project name" required>
+        
+        <label for="projectDescription">Description:</label>
+        <textarea id="projectDescription" placeholder="Enter project description"></textarea>
+        
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" required>
+        
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" required>
+        
+        <!-- Skills selection dropdown -->
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills" multiple required>
+            <!-- Dynamic skill options will be loaded here -->
+        </select>
+        
+        <button onclick="saveProject()">Save Project</button>
+    </div>
+    
+    <!-- edit modal -->
+    <!-- Edit Project Modal -->
+<div id="editProjectModal" style="display: none;">
+    <span class="close-btn" onclick="closeEditModal()">✖</span>
+
+    <form id="editProjectForm">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="editProjectName" name="projectName" required>
+        
+        <label for="projectDescription">Description:</label>
+        <textarea id="editProjectDescription" name="projectDescription"></textarea>
+        
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="editStartDate" name="startDate" required>
+        
+        <label for="endDate">End Date:</label>
+        <input type="date" id="editEndDate" name="endDate">
+        
+        <!-- Skills selection dropdown -->
+        <label for="editSkills">Skills:</label>
+        <select id="editSkills" name="skills" multiple required>
+            <!-- Dynamic skill options will be loaded here -->
+        </select>
+        
+        <button type="submit">Update Project</button>
+    </form>
+</div>
+
+    <script src="../js/admin-project-management.js"></script>
+</body>
+</html>

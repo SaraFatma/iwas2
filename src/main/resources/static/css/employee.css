@@ -1,0 +1,315 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Light Blue Background */
+    color: #333;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    background-color: #004085; /* Darker Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, padding-left 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #0056b3; /* Lighter shade on hover */
+    padding-left: 25px;
+}
+
+.sidebar ul li a.active {
+    background: #007BFF;
+    font-weight: bold;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    margin-left: 300px;
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: #dbe9ff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.employee-info {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Cards Section */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.card h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Profile Page */
+.profile-container {
+    width: 50%;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container label {
+    font-weight: 600;
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.profile-container input, 
+.profile-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f9ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #005f73;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #003d47;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    color: #003d47;
+    margin-bottom: 30px;
+}
+
+.leave-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.leave-form label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.leave-form select,
+.leave-form input[type="date"],
+.leave-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.leave-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.leave-form button {
+    background-color: #005f73;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.leave-form button:hover {
+    background-color: #003d47;
+}
+
+.leave-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.leave-table th, .leave-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.leave-table th {
+    background-color: #005f73;
+    color: white;
+}
+
+.leave-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.leave-table td {
+    color: #333;
+}
+.assigned-projects-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 900px;
+}

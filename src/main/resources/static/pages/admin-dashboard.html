@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin1.css">
+</head>
+<body>
+        
+     <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="admin-dashboard.html"class="active">Dashboard</a></li>
+            <li><a href="admin-employee-management.html">Employee Management</a></li>
+            <li><a href="admin-project-management.html">Project Management</a></li>
+            <li><a href="leave-approval.html">Leave Request</a></li>
+            <li><a href="project-allocation-suggestion.html">Project Allocation</a></li>
+            <li><a href="admin-assignedEmp.html">Assigned Employee</a></li>
+            <li><a   href="admin-assignEmpManaully.html">Assign Employee</a></li>
+            <li><button id="logout-btn">Logout</button></li>
+        </ul>
+    </div>
+
+    <!-- Admin Dashboard Content -->
+     <div class="dashboard-content">
+        <!-- Admin Info Section -->
+        <div class="admin-info">
+            <h1>Welcome, <span id="admin-name">Admin</span></h1>
+            <p>Email: <span id="admin-email">Loading...</span></p>
+            <p>Department: <span id="admin-department">Loading...</span></p>
+        </div>
+        <!-- Dashboard Metrics -->
+         <div class="metrics">
+            <div class="metric">
+                <h3>Total Projects</h3>
+                <p id="total-projects">Loading...</p>
+            </div>
+            <div class="metric">
+                <h3>Total Employees</h3>
+                <p id="total-employees">Loading...</p>
+            </div>
+            <div class="metric">
+                <h3>Pending Leave Requests</h3>
+                <p id="pending-leaves">Loading...</p>
+            </div>
+        </div> 
+
+        <!-- Graph/Reports Section (Can be enhanced later) -->
+         <div class="reports">
+            <h2>Reports</h2>
+            <div id="project-report">Project Report Graph will go here</div>
+            <div id="employee-report">Employee Report Graph will go here</div>
+        </div>
+    </div>
+    <script src="../js/admin-dashboard.js"></script>
+    
+</body>
+</html> 
+
+ 

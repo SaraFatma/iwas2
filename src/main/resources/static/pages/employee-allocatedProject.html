@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigned Projects</title>
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Employee Panel</h2>
+        <ul>
+            <li><a  href="employee-dashboard.html">Employee Dashboard</a></li>
+                <li><a href="employee-profile.html">Profile</a></li>
+                <li><a href="leave-request.html">Leave Requests</a></li>
+                <li><a class ="active" href="employee-allocatedProject.html">Allocated Projects</a></li>
+                <li><button id="logout-btn">Logout</button></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>My Assigned Projects</h2>
+        <div class="assigned-projects-container">
+            <table class="leave-table">
+                <thead>
+                    <tr>
+                        <th>Project ID</th>
+                        <th>Project Name</th>
+                         
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="assigned-projects-body">
+                    <!-- Projects will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/employee-allocatedProject.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Employee Dashboard</h2>
+            <ul>
+                <li><a class ="active" href="employee-dashboard.html">Employee Dashboard</a></li>
+                <li><a href="employee-profile.html">Profile</a></li>
+                <li><a href="leave-request.html">Leave Requests</a></li>
+                <li><a href="employee-allocatedProject.html">Allocated Projects</a></li>
+                <li><button id="logout-btn">Logout</button></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <div class="header">
+                <h1>Welcome, <span id="employee-name">Employee</span></h1>
+                <div class="employee-info">
+                    <p><strong>Name:</strong> <span id="emp-name">Loading...</span></p>
+                    <p><strong>Email:</strong> <span id="emp-email">Loading...</span></p>
+                    <p><strong>Department:</strong> <span id="emp-department">Loading...</span></p>
+                </div>
+            </div>
+
+            <div class="cards-container">
+                <div class="card" id="profile-card">
+                    <h3>Profile Overview</h3>
+                    <p>Skills: <span id="skills">Loading...</span></p>
+                    <p>Current Project: <span id="current-project">Click here</span></p>
+                </div>
+
+                <div class="card" id="notifications-card">
+                    <h3>Recent Notifications</h3>
+                    <ul id="notifications">
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+
+                <div class="card" id="leave-approval-card">
+                    <h3>Leave Status</h3>
+                    <p>Pending Leaves: <span id="leave-status">click here</span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/employee-dashboard.js"></script>
+</body>
+</html>

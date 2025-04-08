@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Allocation Suggestions</title>
+    <link rel="stylesheet" href="../css/admin1.css">
+</head>
+<body>
+    <!-- Admin Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-employee-management.html">Employee Management</a></li>
+            <li><a href="admin-project-management.html">Project Management</a></li>
+            <li><a href="leave-approval.html">Leave Request</a></li>
+            <li><a href="project-allocation-suggestion.html"class="active">Project Allocation</a></li>
+            <li><a href="admin-assignedEmp.html">Assigned Employee</a></li>
+            <li><a href="admin-assignEmpManaully.html">Assign Employee</a></li>
+            <li><button id="logout-btn">Logout</button></li>
+        </ul>
+        </ul>
+    </div>
+
+    <!-- Content Section -->
+    <div class="allocation-content">
+        <h1>Project Allocation Suggestions</h1>
+
+        <!-- Project Suggestions -->
+        <div class="projects-list">
+            <!-- Single Project -->
+            <div class="project-item">
+                <h3>Project: AI Development</h3>
+                <p><strong>Required Skills:</strong> AI, Machine Learning, Python</p>
+                <h4>Suggested Employees:</h4>
+                
+                <div class="employee-suggestions">
+                    <div class="employee-item">
+                        <p><strong>John Doe</strong> - Skills: AI, Python</p>
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                    <div class="employee-item">
+                        <p><strong>Jane Smith</strong> - Skills: AI, Machine Learning</p>
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                    <div class="employee-item">
+                        <p><strong>Mark Lee</strong> - Skills: Python, Machine Learning</p>
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Another Project -->
+            <div class="project-item">
+                <h3>Project: Web Development</h3>
+                <p><strong>Required Skills:</strong> HTML, CSS, JavaScript</p>
+                <h4>Suggested Employees:</h4>
+                
+                <div class="employee-suggestions">
+                    <div class="employee-item">
+                        <p><strong>Anna White</strong> - Skills: HTML, CSS, JavaScript</p>
+
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                    <div class="employee-item">
+                        <p><strong>Tom Green</strong> - Skills: HTML, CSS</p>
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/project-allocation-suggestion.js"></script>
+</body>
+</html>

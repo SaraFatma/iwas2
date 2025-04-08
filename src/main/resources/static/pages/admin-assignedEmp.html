@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Employee Management</title>
+    <link rel="stylesheet" href="../css/admin1.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-employee-management.html" >Employee Management</a></li>
+            <li><a href="admin-project-management.html">Project Management</a></li>
+            <li><a href="leave-approval.html">Leave Requests</a></li>
+            <li><a href="project-allocation-suggestion.html">Project Allocation</a></li>
+            <li><a href="admin-assignedEmp.html" class="active">Assigned Employee</a></li>
+            <li><a href="admin-assignEmpManaully.html">Assign Employee</a></li>
+            <li><button id="logout-btn">Logout</button></li>
+        </ul>
+    </div>
+    <div class="admin-container">
+        <h2>Project - Employee Management</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Employee Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="projectEmployeeTable"></tbody>
+        </table>
+    </div>
+
+    <script src="../js/admin-assignedEmp.js"></script>
+</body>
+</html>
